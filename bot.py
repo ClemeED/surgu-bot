@@ -9,7 +9,7 @@ from excel_search import find_teacher
 MAP_FILE_ID = "BQACAgIAAxkBAAOTaqnPk51eB9ntugVE87gmFwVux6gAAnGyAAKcLFFJHh-aZM956fU9BA"
 
 # ↓↓↓ ЗАМЕНИТЕ НА ВАШ ТОКЕН ИЗ @BotFather ↓↓↓
-bot = telebot.TeleBot("TELEGRAM_BOT_TOKEN")
+bot = telebot.TeleBot(os.environ.get("TELEGRAM_BOT_TOKEN"))
 
 # ↓↓↓ ЗАМЕНИТЕ НА ВАШ КЛЮЧ GIGACHAT ↓↓↓
 GIGACHAT_CREDENTIALS = "GIGACHAT_CREDENTIALS"
