@@ -12,7 +12,7 @@ MAP_FILE_ID = "BQACAgIAAxkBAAOTaqnPk51eB9ntugVE87gmFwVux6gAAnGyAAKcLFFJHh-aZM956
 bot = telebot.TeleBot(os.environ.get("TELEGRAM_BOT_TOKEN"))
 
 # ↓↓↓ ЗАМЕНИТЕ НА ВАШ КЛЮЧ GIGACHAT ↓↓↓
-GIGACHAT_CREDENTIALS = "GIGACHAT_CREDENTIALS"
+GIGACHAT_CREDENTIALS = os.environ.get("GIGACHAT_CREDENTIALS")
 
 # Инициализация GigaChat
 giga = GigaChat(
