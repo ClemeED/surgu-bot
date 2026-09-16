@@ -295,5 +295,6 @@ def reset(message):
     main_menu(message.chat.id)
 
 
-print("Бот запущен...")
-bot.polling(none_stop=True, timeout=60, long_polling_timeout=60)
+if __name__ == "__main__":
+    print("Бот запущен...")
+    bot.polling(none_stop=True, timeout=60, long_polling_timeout=60)
